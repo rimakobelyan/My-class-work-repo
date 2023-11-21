@@ -1,0 +1,54 @@
+21:01:43 DEBUG Selenium Manager binary found at: C:\Users\Solicy\PycharmProjects\pythonProject\pythonProject22\venv\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe
+21:01:43 DEBUG Executing process: C:\Users\Solicy\PycharmProjects\pythonProject\pythonProject22\venv\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome --debug --output json
+21:01:44 DEBUG chromedriver not found in PATH
+21:01:44 DEBUG chrome detected at C:\Program Files\Google\Chrome\Application\chrome.exe
+21:01:44 DEBUG Running command: wmic datafile where name='C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe' get Version /value
+21:01:44 DEBUG Output: "\r\r\n\r\r\nVersion=119.0.6045.160\r\r\n\r\r\n\r\r\n\r"
+21:01:44 DEBUG Detected browser: chrome 119.0.6045.160
+21:01:44 DEBUG Required driver: chromedriver 119.0.6045.105
+21:01:44 DEBUG chromedriver 119.0.6045.105 already in the cache
+21:01:44 DEBUG Driver path: C:\Users\Solicy\.cache\selenium\chromedriver\win64\119.0.6045.105\chromedriver.exe
+21:01:44 DEBUG Browser path: C:\Program Files\Google\Chrome\Application\chrome.exe
+21:01:44 DEBUG Using driver at: C:\Users\Solicy\.cache\selenium\chromedriver\win64\119.0.6045.105\chromedriver.exe
+21:01:44 DEBUG Started executable: `C:\Users\Solicy\.cache\selenium\chromedriver\win64\119.0.6045.105\chromedriver.exe` in a child process with pid: 6376
+21:01:44 DEBUG POST http://localhost:61604/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "browserVersion": null, "goog:chromeOptions": {"extensions": [], "binary": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe", "args": ["--start-maximized"]}}}}
+21:01:44 DEBUG Starting new HTTP connection (1): localhost:61604
+21:01:45 DEBUG http://localhost:61604 "POST /session HTTP/1.1" 200 0
+21:01:45 DEBUG Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"119.0.6045.160","chrome":{"chromedriverVersion":"119.0.6045.105 (38c72552c5e15ba9b3117c0967a0fd105072d7c6-refs/branch-heads/6045@{#1103})","userDataDir":"C:\\Users\\Solicy\\AppData\\Local\\Temp\\scoped_dir6376_449507371"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:61608"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"642f42a115defbab69a415009a457c95"}} | headers=HTTPHeaderDict({'Content-Length': '883', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+21:01:45 DEBUG Finished Request
+21:01:45 DEBUG POST http://localhost:61604/session/642f42a115defbab69a415009a457c95/timeouts {"implicit": 10000}
+21:01:45 DEBUG http://localhost:61604 "POST /session/642f42a115defbab69a415009a457c95/timeouts HTTP/1.1" 200 0
+21:01:45 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+21:01:45 DEBUG Finished Request
+21:01:45 DEBUG POST http://localhost:61604/session/642f42a115defbab69a415009a457c95/url {"url": "https://www.history.com/topics/christmas/history-of-christmas"}
+21:01:46 DEBUG http://localhost:61604 "POST /session/642f42a115defbab69a415009a457c95/url HTTP/1.1" 200 0
+21:01:46 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+21:01:46 DEBUG Finished Request
+21:01:46 DEBUG POST http://localhost:61604/session/642f42a115defbab69a415009a457c95/element {"using": "css selector", "value": ".block-table-of-contents__link"}
+21:01:46 DEBUG http://localhost:61604 "POST /session/642f42a115defbab69a415009a457c95/element HTTP/1.1" 200 0
+21:01:46 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"467DFABE524B215AF3D8FA0DE61E8214_element_43"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+21:01:46 DEBUG Finished Request
+21:01:46 DEBUG POST http://localhost:61604/session/642f42a115defbab69a415009a457c95/execute/sync {"script": "arguments[0].scrollIntoView();", "args": [{"element-6066-11e4-a52e-4f735466cecf": "467DFABE524B215AF3D8FA0DE61E8214_element_43"}]}
+21:01:46 DEBUG http://localhost:61604 "POST /session/642f42a115defbab69a415009a457c95/execute/sync HTTP/1.1" 200 0
+21:01:46 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+21:01:46 DEBUG Finished Request
+21:01:46 DEBUG POST http://localhost:61604/session/642f42a115defbab69a415009a457c95/element/467DFABE524B215AF3D8FA0DE61E8214_element_43/click {}
+21:01:46 DEBUG http://localhost:61604 "POST /session/642f42a115defbab69a415009a457c95/element/467DFABE524B215AF3D8FA0DE61E8214_element_43/click HTTP/1.1" 200 0
+21:01:46 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+21:01:46 DEBUG Finished Request
+21:01:46 DEBUG POST http://localhost:61604/session/642f42a115defbab69a415009a457c95/element {"using": "css selector", "value": "[id=\"how-did-christmas-start\"]"}
+21:01:46 DEBUG http://localhost:61604 "POST /session/642f42a115defbab69a415009a457c95/element HTTP/1.1" 200 0
+21:01:46 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"467DFABE524B215AF3D8FA0DE61E8214_element_44"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+21:01:46 DEBUG Finished Request
+21:01:46 DEBUG GET http://localhost:61604/session/642f42a115defbab69a415009a457c95/element/467DFABE524B215AF3D8FA0DE61E8214_element_44/text {}
+21:01:46 DEBUG http://localhost:61604 "GET /session/642f42a115defbab69a415009a457c95/element/467DFABE524B215AF3D8FA0DE61E8214_element_44/text HTTP/1.1" 200 0
+21:01:46 DEBUG Remote response: status=200 | data={"value":"How Did Christmas Start?"} | headers=HTTPHeaderDict({'Content-Length': '36', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+21:01:46 DEBUG Finished Request
+21:01:46 DEBUG POST http://localhost:61604/session/642f42a115defbab69a415009a457c95/back {}
+21:01:46 DEBUG http://localhost:61604 "POST /session/642f42a115defbab69a415009a457c95/back HTTP/1.1" 200 0
+21:01:46 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+21:01:46 DEBUG Finished Request
+21:01:46 DEBUG DELETE http://localhost:61604/session/642f42a115defbab69a415009a457c95 {}
+21:01:46 DEBUG http://localhost:61604 "DELETE /session/642f42a115defbab69a415009a457c95 HTTP/1.1" 200 0
+21:01:46 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+21:01:46 DEBUG Finished Request
